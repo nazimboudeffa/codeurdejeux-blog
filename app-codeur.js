@@ -70,8 +70,10 @@ app.get('/topic/:topic/:article', function (req, res) {
   res.render('article', { result : article })
 })
 
-let port = process.env.PORT || 3000;
+//I use 3001 because I have default apps on the port 3000 running in my server
+
+let port = process.env.PORT || 3001;
 
 app.listen(port, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('Example app listening on port 3001!')
 })
