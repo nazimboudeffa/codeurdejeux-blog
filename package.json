@@ -1,0 +1,30 @@
+{
+  "name": "codeurdejeux",
+  "version": "1.0.0",
+  "description": "Le Site CodeurDeJeux",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node ./devs/app.js"
+  },
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "showdown": "^1.9.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazimboudeffa/codeurdejeux.git"
+  },
+  "keywords": [
+    "codeur",
+    "jeux vidéos"
+  ],
+  "author": "Nazim Boudeffa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nazimboudeffa/codeurdejeux/issues"
+  },
+  "homepage": "https://github.com/nazimboudeffa/codeurdejeux#readme"
+}

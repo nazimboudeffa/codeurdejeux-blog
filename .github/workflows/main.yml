@@ -1,0 +1,12 @@
+name: Fire Ascii Art
+on: [push]
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo "Hack the Planet!"

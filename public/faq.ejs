@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Codeur de Jeux</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+  <!-- Add to HTML Head -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <% include ./partials/navbar.ejs %>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1 class="mt-5">Frequently Asked Questions</h1>
+        <p class="lead">Find below a list of the most frequently asked questions and the answers that are associated with them. If you can not find an answer to your questions, do not hesitate to contact us and we will make every effort to answer you as soon as possible.
+</p>
+        <ul class="list-unstyled">
+          <li>Do I need to paid to register at this site or to consult its content ?</li>
+          <li>No, our site is completely free and intends to stay like this. It’s the founding spirit of the Internet and it’s the way we want to be.</li>
+        </ul>
+
+        <ul class="list-unstyled">
+          <li>Why is there advertising on this site ?</li>
+          <li>This site is a website completely free to use. Nevertheless, managing, evolving and hosting this site represents a significant cost. Without advertising, free websites such as this site could not exist.</li>
+        </ul>
+
+        <ul class="list-unstyled">
+          <li>Can I advertise on this site ?</li>
+          <li>This site is a website completely free to use. Nevertheless, managing, evolving and hosting this site represents a significant cost. Without advertising, free websites such as this site could not exist.</li>
+        </ul>
+
+        <p>Advertising on this site is a unique opportunity to reach millions of tech-savvy, researchers and cyber security enthusiast readers. With more than 2 million monthly readers and millions of followers, this site is one of the most influential websites in the cyber security domain that attracts a core audience of professionals who are looking for the latest IT security products, resources and technical reviews. For more informations, do not hesitate to contact us.</p>
+
+        <ul class="list-unstyled">
+          <li>What type of advertising do you offer ?</li>
+          <li>We offer a wide range of advertising opportunities to help you reach millions most powerfully and cost-effectively.</li>
+          <ul>
+            <li>Banner Ads</li>
+            <li>Promotion via Newsletter</li>
+            <li>Social Media Campaigns</li>
+          </ul>
+        </ul>
+
+        <ul class="list-unstyled">
+          <li>Do you offer sponsored articles solution ?</li>
+          <li>If you have an excellent service, product or book that you think the world should know about it, then you can either advertise on this site or get it reviewed by our readers on our website.</li>
+        </ul>
+
+        <ul class="list-unstyled">
+          <li>What are your support hours ?</li>
+          <li>Tech Support is available 24/7. The typical administrative hours are 14:00/22:00 GMT. If you would like to know what time it is currently in GMT you can do so here. If you would like to know the GMT times converted to your local time you can do so at Time Zone Converter.</li>
+        </ul>
+    </div>
+    <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+      <% include partials/share %>
+
+      <% include partials/categories %>
+
+      <% include partials/widget %>
+
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#mydiv").find(".card-title").html($("#myarticle").find('h2:first').text().substring(0, 20) + " ...");
+        $("#mydiv").find(".card-text").html($("#myarticle").find('p:first').text().substring(0, 100) + " ...");
+        $(".button").attr("data-url", window.location.href);
+    })
+
+  </script>
+
+  <% include partials/footer %>
+
+</body>
+
+</html>

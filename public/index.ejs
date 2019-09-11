@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Codeur de Jeux</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/blog-home.css" rel="stylesheet">
+  <!-- Add to HTML Head -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sharer.js@latest/sharer.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <% include ./partials/navbar.ejs %>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">Dernier Article
+        </h1>
+
+        <% include ./partials/short-static-basic %>
+
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+
+      <% include partials/share %>
+
+      <% include partials/categories %>
+
+      <% include partials/widget %>
+
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+        $("#mydiv").find(".card-title").html($("#myarticle").find('h2:first').text().substring(0, 20) + " ...");
+        $("#mydiv").find(".card-text").html($("#myarticle").find('p:first').text().substring(0, 100) + " ...");
+        $(".button").attr("data-url", window.location.href);
+    })
+
+  </script>
+
+  <% include partials/footer %>
+
+</body>
+
+</html>
