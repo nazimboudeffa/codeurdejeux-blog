@@ -4,8 +4,8 @@
   "description": "Le Site CodeurDeJeux",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "node ./devs/app.js"
+    "start": "node app-codeur.js",
+    "test": "node ./devs/app-codeur.js"
   },
   "dependencies": {
     "ejs": "^2.7.1",
