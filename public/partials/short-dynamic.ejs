@@ -1,11 +1,11 @@
 <div id="<%= 'mydiv-' + i %>">
   <!-- Blog Post -->
   <div class="card mb-4">
-    <img class="card-img-top" src="../../images/<%= articles[i].topic + '-' + articles[i].title %>.jpg" alt="Card image cap">
+    <img class="card-img-top" src="../images/<%= articles[i].article.banner %>" alt="Card image cap">
     <div class="card-body">
-      <h2 class="card-title"></h2>
+      <h2 class="card-title"><%= articles[i].article.file %></h2>
       <p class="card-text"></p>
-      <a href="<%= articles[i].topic + '/' + articles[i].title %>" class="btn btn-primary">Lire la suite &rarr;</a>
+      <a href="<%= articles[i].article.topic + '/' + articles[i].article.file %>" class="btn btn-primary">Lire la suite &rarr;</a>
     </div>
   </div>
 </div>

@@ -30,7 +30,7 @@ app.get('/hello', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-  res.render('index', {articles : articles})
+  res.render('index')
 })
 
 app.get('/faq', function (req, res) {
@@ -42,33 +42,27 @@ app.get('/contact', function (req, res) {
 })
 
 app.get('/topic/:topic', function (req, res) {
-  var articles = [];
-  var topics = processFolderSync('./public/content/articles/' + req.params.topic)
-  for(i=0;i<topics.length;i++){
-    var content = processFileSync('./public/content/articles/' + req.params.topic + '/' + topics[i])
+  var articlesFiltered = articles.filter(obj => {return obj.topic === req.params.topic})
+  var articlesResult = [];
+  //var topics = processFolderSync('./public/content/articles/' + req.params.topic)
+  for(i=0;i<articlesFiltered.length;i++){
+    var content = processFileSync('./public/content/articles/' + articlesFiltered[i].topic + '/' + articlesFiltered[i].file + '.md')
     var result = converter.makeHtml(content)
     //articles[i] = result;
-    articles.push({
-      "topic" : req.params.topic,
-      "title" : (topics[i].split("."))[0],
+    articlesResult.push({
+      "article" : articlesFiltered[i],
       "text" : result
     });
   }
-  res.render('articles', { articles : articles })
+  res.render('articles', { articles : articlesResult })
 })
 
 app.get('/topic/:topic/:article', function (req, res) {
-  var content = processFileSync('./public/content/articles/' + req.params.topic + '/' + req.params.article + '.md')
+
+  var articleFiltered = articles.filter(obj => {return obj.file === req.params.article})
+  var content = processFileSync('./public/content/articles/' + articleFiltered[0].topic + '/' + articleFiltered[0].file + '.md')
   var result = converter.makeHtml(content)
-  var article = {
-    "topic" : "",
-    "title" : "",
-    "text" : ""
-  }
-  article.topic = req.params.topic
-  article.title = req.params.article
-  article.text = result
-  res.render('article', { result : article })
+  res.render('article', { result : {"article" : articleFiltered, "text" : result} })
 })
 
 //I use 3001 because I have default apps on the port 3000 running in my server
