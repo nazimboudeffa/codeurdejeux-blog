@@ -20,7 +20,7 @@ Assurez-vous également de consulter le Guide de démarrage, qui vous montrera c
 
 Si vous avez parcouru le Guide de mise en route, vous aurez téléchargé Phaser. Tout sera prêt et codé. Téléchargez les ressources de ce didacticiel et décompressez-les dans votre racine Web.
 
-Ouvrez la page part1.html dans l’éditeur de votre choix et examinons le code de plus près. Après un peu de HTML standard incluant Phaser, la structure du code se présente comme suit:
+Ouvrez la page `part1.html` dans l’éditeur de votre choix et examinons le code de plus près. Après un peu de HTML standard incluant Phaser, la structure du code se présente comme suit:
 
 ```JavaScript
 var config = {
@@ -51,12 +51,12 @@ function update ()
 
 L'objet config est la façon dont vous configurez votre jeu Phaser. Il existe de nombreuses options pouvant être placées dans cet objet et, à mesure que vous développez vos connaissances sur Phaser, vous en rencontrez davantage. Mais dans ce tutoriel, nous allons simplement définir le moteur de rendu, les dimensions et une scène par défaut.
 
-Une instance d'un objet Phaser.Game est affectée à une variable locale appelée game et l'objet de configuration lui est transmise. Cela lancera le processus de réalisation de Phaser.
+Une instance d'un objet Phaser.Game est affectée à une variable locale appelée `game` et l'objet de configuration lui est transmise. Cela lancera le processus de réalisation de Phaser.
 
-Dans Phaser 2, l’objet Game servait de passerelle vers presque tous les systèmes internes et était souvent accessible à partir d’une variable globale. Dans Phaser 3, ce n'est plus le cas et il n'est plus utile de stocker l'instance de jeu dans une variable globale.
+Dans Phaser 2, l’objet `Game` servait de passerelle vers presque tous les systèmes internes et était souvent accessible à partir d’une variable globale. Dans Phaser 3, ce n'est plus le cas et il n'est plus utile de stocker l'instance de jeu dans une variable globale.
 
-La propriété type peut être Phaser.CANVAS, Phaser.WEBGL ou Phaser.AUTO. C'est le contexte de rendu que vous souhaitez utiliser pour votre jeu. La valeur recommandée est Phaser.AUTO qui essaie automatiquement d'utiliser WebGL, mais si le navigateur ou le périphérique ne le prend pas en charge, il sera redirigé sur Canvas. L'élément de canevas créé par Phaser sera simplement ajouté au document au moment où le script a été appelé, mais vous pouvez également spécifier un conteneur parent dans la configuration du jeu si vous le souhaitez.
+La propriété `type` peut être `Phaser.CANVAS`, `Phaser.WEBGL` ou `Phaser.AUTO`. C'est le contexte de rendu que vous souhaitez utiliser pour votre jeu. La valeur recommandée est `Phaser.AUTO` qui essaie automatiquement d'utiliser WebGL, mais si le navigateur ou le périphérique ne le prend pas en charge, il sera redirigé sur Canvas. L'élément de canevas créé par Phaser sera simplement ajouté au document au moment où le script a été appelé, mais vous pouvez également spécifier un conteneur parent dans la configuration du jeu si vous le souhaitez.
 
-Les propriétés width et height définissent la taille de l'élément de canevas que Phaser va créer. Dans ce cas 800 x 600 pixels. Votre monde de jeu peut être n’importe quelle taille, mais c’est la résolution dans laquelle le jeu s’affiche.
+Les propriétés `width` et `height` définissent la taille de l'élément de canevas que Phaser va créer. Dans ce cas 800 x 600 pixels. Votre monde de jeu peut être n’importe quelle taille, mais c’est la résolution dans laquelle le jeu s’affiche.
 
-La propriété scène de l'objet de configuration sera traitée plus en détail dans ce didacticiel.
+La propriété `scène` de l'objet de configuration sera traitée plus en détail dans ce didacticiel.

@@ -2,7 +2,7 @@
 
 Nous avons de belles plateformes tentantes, mais personne ne peut les parcourir. Réglons cela.
 
-Créez une nouvelle variable appelée player et ajoutez le code suivant à la fonction create. Vous pouvez voir ceci dans part5.html:
+Créez une nouvelle variable appelée `player` et ajoutez le code suivant à la fonction `create`. Vous pouvez voir ceci dans `part5.html`:
 
 ```JavaScript
 player = this.physics.add.sprite(100, 450, 'dude');
@@ -44,13 +44,13 @@ player.setBounce(0.2);
 player.setCollideWorldBounds(true);
 ```
 
-Cela crée un nouveau sprite appelé player, positionné à 100 x 450 pixels du bas de la partie. Le sprite a été créé via la Physics Game Object Factory (this.physics.add), ce qui signifie qu'il possède un corps de physique dynamique par défaut.
+Cela crée un nouveau sprite appelé `player`, positionné à 100 x 450 pixels du bas de la partie. Le sprite a été créé via la Physics Game Object Factory (`this.physics.add`), ce qui signifie qu'il possède un corps de physique dynamique par défaut.
 
 Après avoir créé le sprite, il reçoit une légère valeur de rebond de 0,2. Cela signifie que quand il atterrit après avoir sauté, il rebondit légèrement. Le sprite est alors configuré pour entrer en collision avec les limites du monde. Les limites, par défaut, sont à l'extérieur des dimensions du jeu. Si nous fixons le jeu à 800 x 600, le joueur ne pourra pas courir en dehors de cette zone. Cela empêchera le joueur de pouvoir sortir des bords de l'écran ou de sauter par le haut.
 
 ## Animations
 
-Si vous jetez un coup d'œil à la fonction de préchargement, vous verrez que "mec" a été chargé sous forme de feuille de sprite, pas d'image. C'est parce qu'il contient des images d'animation. Voici à quoi ressemble la feuille de sprite complète:
+Si vous jetez un coup d'œil à la fonction de `préchargement`, vous verrez que "mec" a été chargé sous forme de feuille de sprite, pas d'image. C'est parce qu'il contient des images d'animation. Voici à quoi ressemble la feuille de sprite complète:
 
 ![Le dude](../../content/images/dude.png)
 

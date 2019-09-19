@@ -2,13 +2,13 @@
 
 Phaser prend en charge une variété de systèmes de physique différents, chacun agissant en tant que plug-in disponible pour n'importe quelle scène de Phaser. Au moment de la rédaction de cet article, il est livré avec Arcade Physics, Impact Physics et Matter.js Physics. Pour les besoins de ce didacticiel, nous allons utiliser le système Arcade Physics pour notre jeu, qui est simple et léger, parfait pour les navigateurs mobiles.
 
-Lorsqu'un objet physique est créé, il se voit attribuer une propriété body, qui fait référence à son corps Arcade Physics. Cela représente le sprite en tant que corps physique dans le moteur de physique des phasers d'Arcade. L'objet body a beaucoup de propriétés et de méthodes avec lesquelles nous pouvons jouer.
+Lorsqu'un objet physique est créé, il se voit attribuer une propriété `body`, qui fait référence à son corps Arcade Physics. Cela représente le sprite en tant que corps physique dans le moteur de physique des phasers d'Arcade. L'objet body a beaucoup de propriétés et de méthodes avec lesquelles nous pouvons jouer.
 
 Par exemple, pour simuler les effets de la gravité sur un sprite, il suffit d’écrire:
 
-player.body.setGravityY (300)
+`player.body.setGravityY(300)`
 
-C'est une valeur arbitraire, mais logiquement, plus la valeur est élevée, plus votre objet se sent lourd et plus vite il tombe. Si vous ajoutez ceci à votre code ou si vous lancez part5.html, vous verrez que le joueur tombe sans s'arrêter, ignorant complètement le terrain créé précédemment:
+C'est une valeur arbitraire, mais logiquement, plus la valeur est élevée, plus votre objet se sent lourd et plus vite il tombe. Si vous ajoutez ceci à votre code ou si vous lancez `part5.html`, vous verrez que le joueur tombe sans s'arrêter, ignorant complètement le terrain créé précédemment:
 
 ![Partie 5](../../content/images/part5.png)
 

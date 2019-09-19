@@ -2,9 +2,9 @@
 
 La collision est une bonne chose, mais nous avons vraiment besoin que le joueur bouge. Vous penserez probablement à aller dans la documentation et à chercher comment ajouter un écouteur d'événement, mais ce n'est pas nécessaire ici. Phaser a un gestionnaire de clavier intégré et l'un des avantages de son utilisation est cette petite fonction pratique:
 
-curseurs = this.input.keyboard.createCursorKeys ();
+`curseurs = this.input.keyboard.createCursorKeys();`
 
-Cela remplit l'objet curseurs avec quatre propriétés: haut, bas, gauche, droite, qui sont toutes des occurrences d'objets Key. Ensuite, tout ce que nous avons à faire est de les interroger dans notre boucle de mise à jour:
+Cela remplit l'objet curseurs avec quatre propriétés: haut, bas, gauche, droite, qui sont toutes des occurrences d'objets Key. Ensuite, tout ce que nous avons à faire est de les interroger dans notre boucle de `mise à jour`:
 
 ```JavaScript
 if (cursors.left.isDown)
