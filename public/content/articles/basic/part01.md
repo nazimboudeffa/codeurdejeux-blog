@@ -12,7 +12,7 @@ Phaser est un framework de jeu HTML5 destiné à aider les développeurs à cré
 
 ### Prérequis
 
-Téléchargez ce fichier zip qui contient chaque étape de ce didacticiel sous forme de code et les ressources qui vont avec.
+[Téléchargez ce fichier zip](https://phaser.io/tutorials/making-your-first-phaser-3-game/phaser3-tutorial-src.zip) qui contient chaque étape de ce didacticiel sous forme de code et les ressources qui vont avec.
 
 Vous devez avoir une connaissance très, très basique de JavaScript.
 

@@ -22,7 +22,7 @@ function processFileSync(file){
 }
 
 var converter = new showdown.Converter()
-var text      = '# Salut, Codeur De Jeux !'
+var text      = '# Salut à Toi, Codeur De Jeux !'
 var html      = converter.makeHtml(text)
 
 app.get('/hello', function (req, res) {
