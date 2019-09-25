@@ -65,6 +65,22 @@ app.get('/category/:category/:article', function (req, res) {
   res.render('article', { result : {"article" : articleFiltered, "text" : result} })
 })
 
+app.get('/tag/:tag', function (req, res) {
+  var articlesFiltered = articles.filter(obj => {return obj.tags === req.params.tag})
+  var articlesResult = [];
+  //var topics = processFolderSync('./public/content/articles/' + req.params.topic)
+  for(i=0;i<articlesFiltered.length;i++){
+    var content = processFileSync('./public/content/articles/' + articlesFiltered[i].category + '/' + articlesFiltered[i].file + '.md')
+    var result = converter.makeHtml(content)
+    //articles[i] = result;
+    articlesResult.push({
+      "article" : articlesFiltered[i],
+      "text" : result
+    });
+  }
+  res.render('tags', { articles : articlesResult })
+})
+
 //I use 3001 because I have default apps on the port 3000 running in my server
 
 let port = process.env.PORT || 3001;

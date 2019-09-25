@@ -4,6 +4,7 @@ module.exports = [
     "file" : "part01",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -11,6 +12,7 @@ module.exports = [
     "file" : "part02",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -18,6 +20,7 @@ module.exports = [
     "file" : "part03",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -25,6 +28,7 @@ module.exports = [
     "file" : "part04",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -32,6 +36,7 @@ module.exports = [
     "file" : "part05",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -39,6 +44,7 @@ module.exports = [
     "file" : "part06",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -46,6 +52,7 @@ module.exports = [
     "file" : "part07",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -53,6 +60,7 @@ module.exports = [
     "file" : "part08",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -60,6 +68,7 @@ module.exports = [
     "file" : "part09",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   },
   {
@@ -67,6 +76,7 @@ module.exports = [
     "file" : "part10",
     "banner" : "phaser-logo-750x300",
     "author" : "admin",
+    "tags" : "phaser3",
     "date" : "2019-08-10"
   }
 ]
