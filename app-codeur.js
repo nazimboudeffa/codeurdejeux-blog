@@ -41,12 +41,12 @@ app.get('/contact', function (req, res) {
   res.render('contact')
 })
 
-app.get('/topic/:topic', function (req, res) {
-  var articlesFiltered = articles.filter(obj => {return obj.topic === req.params.topic})
+app.get('/category/:category', function (req, res) {
+  var articlesFiltered = articles.filter(obj => {return obj.category === req.params.category})
   var articlesResult = [];
   //var topics = processFolderSync('./public/content/articles/' + req.params.topic)
   for(i=0;i<articlesFiltered.length;i++){
-    var content = processFileSync('./public/content/articles/' + articlesFiltered[i].topic + '/' + articlesFiltered[i].file + '.md')
+    var content = processFileSync('./public/content/articles/' + articlesFiltered[i].category + '/' + articlesFiltered[i].file + '.md')
     var result = converter.makeHtml(content)
     //articles[i] = result;
     articlesResult.push({
@@ -57,10 +57,10 @@ app.get('/topic/:topic', function (req, res) {
   res.render('articles', { articles : articlesResult })
 })
 
-app.get('/topic/:topic/:article', function (req, res) {
+app.get('/category/:category/:article', function (req, res) {
 
   var articleFiltered = articles.filter(obj => {return obj.file === req.params.article})
-  var content = processFileSync('./public/content/articles/' + articleFiltered[0].topic + '/' + articleFiltered[0].file + '.md')
+  var content = processFileSync('./public/content/articles/' + articleFiltered[0].category + '/' + articleFiltered[0].file + '.md')
   var result = converter.makeHtml(content)
   res.render('article', { result : {"article" : articleFiltered, "text" : result} })
 })
