@@ -59,7 +59,7 @@ app.get('/category/:category', function (req, res) {
 
 app.get('/category/:category/:article', function (req, res) {
 
-  var articleFiltered = articles.filter(obj => {return obj.file === req.params.article})
+  var articleFiltered = articles.filter(obj => {return obj.title === decodeURI(req.params.article)})
   var content = processFileSync('./public/content/articles/' + articleFiltered[0].category + '/' + articleFiltered[0].file + '.md')
   var result = converter.makeHtml(content)
   res.render('article', { result : {"article" : articleFiltered, "text" : result} })

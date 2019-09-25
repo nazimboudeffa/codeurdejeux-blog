@@ -1,15 +1,9 @@
-<div id="<%= 'mydiv-' + i %>">
-  <!-- Blog Post -->
-  <div class="card mb-4">
-    <img class="card-img-top" src="../images/<%= articles[i].article.banner %>.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h2 class="card-title"><%= articles[i].article.file %></h2>
-      <p class="card-text"></p>
-      <a href="/category/<%= articles[i].article.category + '/' + articles[i].article.file %>" class="btn btn-primary">Lire la suite &rarr;</a>
-    </div>
+<!-- Blog Post -->
+<div class="card mb-4">
+  <img class="card-img-top" src="../images/<%= articles[i].article.banner %>.jpg" alt="Card image cap">
+  <div class="card-body">
+    <h2 class="card-title"><%= articles[i].article.title %></h2>
+    <p class="card-text"><%= articles[i].article.description %></p>
+    <a href="/category/<%= articles[i].article.category + '/' + encodeURI(articles[i].article.title) %>" class="btn btn-primary">Lire la suite &rarr;</a>
   </div>
-</div>
-
-<div id="<%= 'myarticle-' + i %>" style="display: none;">
-  <%- articles[i].text %>
 </div>

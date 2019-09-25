@@ -67,10 +67,12 @@
   <script type="text/javascript">
 
     $(document).ready(function(){
+      /*
       for (var i=0; i < <%= articles.length %>; i++){
         $("#mydiv-" + i).find(".card-title").html($("#myarticle-"+ i).find('h2:first').text().substring(0, 20) + " ...");
         $("#mydiv-" + i).find(".card-text").html($("#myarticle-"+ i).find('p:first').text().substring(0, 100) + " ...");
       }
+      */
       $(".button").attr("data-url", window.location.href);
     })
 
