@@ -1,71 +1,71 @@
 module.exports = [
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part01",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part02",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part03",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part04",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part05",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part06",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part07",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part08",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part09",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   },
   {
-    "topic" : "basic",
+    "category" : "tutorial",
     "file" : "part10",
-    "banner" : "basic-part1.jpg",
+    "image" : "phaser-logo-750x300",
     "author" : "admin",
     "date" : "2019-08-10"
   }
