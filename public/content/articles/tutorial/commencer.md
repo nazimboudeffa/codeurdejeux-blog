@@ -1,6 +1,6 @@
 ## Choisir un éditeur
 
-Vous allez avoir besoin d'un éditeur pour préparer votre code JavaScript. Il en existe beaucoup, chacun avec ses forces et ses faiblesses. Si vous êtes un développeur expérimenté, vous aurez probablement déjà votre propre éditeur préféré. Dans ce cas, passez à la Hello World de ce tutoriel. Sinon, voici quelques options pour vous:
+Vous allez avoir besoin d'un éditeur pour préparer votre code JavaScript. Il en existe beaucoup, chacun avec ses forces et ses faiblesses. Si vous êtes un développeur expérimenté, vous aurez probablement déjà votre propre éditeur préféré. Dans ce cas, passez à télécharger Phaser de ce tutoriel. Sinon, voici quelques options pour vous:
 
 ### Atom
 
@@ -29,7 +29,7 @@ Donc vous pouvez obtenir Phaser en clonant le référentiel, en récupérant le 
 
 Avec la configuration de votre éditeur et le téléchargement de Phaser, il est temps de créer quelque chose et de vérifier que tout fonctionne.
 
-Créez un fichier appelé index.html à l'intérieur de d'un dossier et collez-y le code suivant:
+Créez un fichier appelé index.html à l'intérieur d'un dossier et collez-y le code suivant:
 
 ```
 <!DOCTYPE html>
