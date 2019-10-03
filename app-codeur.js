@@ -30,7 +30,7 @@ app.get('/hello', function (req, res) {
 })
 
 app.get('/', function (req, res) {
-  res.render('index')
+  res.render('index', {articles : articles})
 })
 
 app.get('/faq', function (req, res) {

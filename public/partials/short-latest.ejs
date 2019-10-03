@@ -1,15 +1,15 @@
 <div id="mydiv">
 <!-- Blog Post -->
 <div class="card mb-4">
-  <img class="card-img-top" src="../../images/<%= article.topic + '-' + article.title %>.jpg" alt="Card image cap">
+  <img class="card-img-top" src="../images/<%= articles[0].banner %>.jpg" alt="Card image cap">
   <div class="card-body">
-    <h2 class="card-title"></h2>
-    <p class="card-text"></p>
-    <a href="topic/<%= article.topic + '/' + article.title %>" class="btn btn-primary">Lire la suite &rarr;</a>
+    <h2 class="card-title"><%= articles[0].title %></h2>
+    <p class="card-text"><%= articles[0].description %></p>
+    <a href="category/<%= articles[0].category + '/' + articles[0].title %>" class="btn btn-primary">Lire la suite &rarr;</a>
   </div>
   </div>
 </div>
 
 <div id="myarticle" style="display: none;">
-  <%- article.text %>
+  <%- articles[0].text %>
 </div>
