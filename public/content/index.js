@@ -2,7 +2,7 @@ module.exports = [
   {
     "category" : "tutorial",
     "file" : "making-your-first-phaser-3-game",
-    "banner" : "phaser-logo-750x300",
+    "banner" : "tutorial_header",
     "title" : "Créer son premier jeu Phaser 3",
     "description" : "Nous allons voir comment créer son premier jeu phaser3",
     "author" : "admin",

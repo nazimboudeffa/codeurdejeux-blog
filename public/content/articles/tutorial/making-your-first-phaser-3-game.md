@@ -1,9 +1,5 @@
 ## Partie 1 - Introduction
 
-![Entête Tutoriel](../../content/images/tutorial_header.png)
-
-### Créer son premier jeu phaser 3
-
 Bienvenue dans notre premier tutoriel sur la création d'un jeu avec Phaser 3. Nous allons apprendre ici comment créer un petit jeu impliquant un joueur courant et sautant sur des plates-formes, collectant des étoiles et évitant les méchants. Tout au long de ce processus, nous expliquerons certaines des fonctionnalités essentielles du framework.
 
 ### Qu'est-ce que Phaser?
