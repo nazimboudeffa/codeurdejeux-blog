@@ -18,5 +18,15 @@ module.exports = [
     "author" : "admin",
     "tags" : "phaser2(ce)",
     "date" : "2019-09-26"
+  },
+  {
+    "category" : "tutorial",
+    "file" : "phaser-and-the-migration-from-javascript-to-typescript",
+    "banner" : "phaser3-ts",
+    "title" : "Phaser et la migration de Javascript à Typescript",
+    "description" : "Nous allons voir comment migrer de Javascript à Typescript",
+    "author" : "admin",
+    "tags" : "phaser3",
+    "date" : "2021-06-02"
   }
 ]

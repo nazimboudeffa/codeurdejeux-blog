@@ -1,0 +1,1 @@
+Comme promis, nous voici à l'étape 3 de la migration de JavaScript vers TypeScript dans la construction de jeux HTML5 utilisant Phaser.
