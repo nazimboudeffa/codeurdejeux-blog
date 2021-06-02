@@ -4,4 +4,4 @@ DOING THE TRANSLATION
 
 Thank you very much to Emanuele Feronato for letitng me translate his article to french
 
-REFERENCE ARTICLE https://www.emanueleferonato.com/2021/06/01/phaser-and-the-migration-from-javascript-to-typescript-step-3-typescript
+REFERENCE ARTICLE [https://www.emanueleferonato.com/2021/06/01/phaser-and-the-migration-from-javascript-to-typescript-step-3-typescript](https://www.emanueleferonato.com/2021/06/01/phaser-and-the-migration-from-javascript-to-typescript-step-3-typescript)
