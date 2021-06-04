@@ -52,6 +52,18 @@
           et les partager sur le site pour discuter avec la communauté
         </p>
 
+        <h1 class="my-4">Dernier Article</h1>
+
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <img class="card-img-top" src="images/<%= articles[articles.length-1].banner %>.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h2 class="card-title"><%= articles[articles.length-1].title %></h2>
+            <p class="card-text"><%= articles[articles.length-1].description %></p>
+            <a href="/category/<%= articles[articles.length-1].category + '/' + encodeURI(articles[articles.length-1].title) %>" class="btn btn-primary">Lire la suite &rarr;</a>
+          </div>
+        </div>
+
       </div>
 
       <!-- Sidebar Widgets Column -->
